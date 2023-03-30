@@ -1,0 +1,12 @@
+29-03-2023
+
+1. Create add, remove and status components and add them to a panel that can help in handling together
+https://www.youtube.com/watch?v=S-QEvQnxSTY
+2. Add colour scheme to the GUI
+3. Add an icon that represents checklist in menu bar
+
+Other UI Ideas
+- priority setting can be added
+- component for date, time and reminders can be added
+- users can add or remove different tabs that are customized to his needs like grocery, movies, etc.
+
