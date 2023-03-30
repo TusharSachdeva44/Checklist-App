@@ -13,16 +13,13 @@ public class checklistGUI extends JFrame {
 
     public checklistGUI(String name) {
         super(name);
-    }
-    checklistGUI() {}
-
-    void initialize() {
         this.setVisible(true); //opening and showing of window
         this.setComponents();
         this.setLayout(null);
         this.setBounds(0,0,500,500); //setting size of window
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //closing of window
     }
+    checklistGUI() {}
 
     void setComponents() {
         //Creating a default list
@@ -65,7 +62,6 @@ public class checklistGUI extends JFrame {
     }
 
     public static void main(String[] args) {
-        checklistGUI checklist = new checklistGUI("Checklist");
-        checklist.initialize();
+        new checklistGUI("Checklist");
     }
 }
