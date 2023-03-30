@@ -28,37 +28,35 @@ public class checklistGUI extends JFrame {
         defaultList.addElement("Item 2");
         defaultList.addElement("Item 3");
         myList = new JList<String>(defaultList);
-        myList.setBounds(8,5,100,50);
-        myList.setBackground(Color.YELLOW);
-        add(myList);
+        myList.setBounds(8,5,200,200);
 
         //Task handling panel
         taskManipulation = new JPanel(null);
         taskManipulation.setOpaque(true);
-        taskManipulation.setBounds(8, 215, 200, 100);
-        taskManipulation.setBackground(Color.RED);
-            //Adding buttons
-            addTask = new JButton("Add");
-            addTask.setBounds(0, 0, 90,30);
-            taskManipulation.add(addTask);
+        taskManipulation.setBounds(8, 215, 200, 80);
+        //Adding buttons
+        addTask = new JButton("Add");
+        addTask.setBounds(0, 0, 90,30);
+        taskManipulation.add(addTask);
 
-            remove = new JButton("Remove");
-            remove.setBounds(100, 0, 90, 30);
-            taskManipulation.add(remove);
+        remove = new JButton("Remove");
+        remove.setBounds(100, 0, 90, 30);
+        taskManipulation.add(remove);
 
-            //Adding label
-            statusLabel = new JLabel(status);
-            statusLabel.setBounds(0, 40, 200, 30);
-            taskManipulation.add(statusLabel);
+        //Adding label
+        statusLabel = new JLabel(status);
+        statusLabel.setBounds(0, 40, 200, 30);
+        taskManipulation.add(statusLabel);
         add(taskManipulation);
 
         //Creating task adding panel
         task = new JTextField("Quick add");
         taskAdd = new JButton("+");
-        task.setBounds(10, 355, 150, 20);
-        taskAdd.setBounds(170, 350, 50, 30);
+        task.setBounds(10, 305, 150, 20);
+        taskAdd.setBounds(170, 300, 50, 30);
         add(task);
         add(taskAdd);
+        add(myList); //this was the headache error
     }
 
     public static void main(String[] args) {
